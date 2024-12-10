@@ -7,13 +7,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MainController {
     @GetMapping("/")
-    public void home() {
-        System.out.println("Home page requested");
+    @ResponseBody
+    public String home() {
+        return "index";
     }
 
     @GetMapping("/about")
-    public void about() {
-        System.out.println("adout");
+    @ResponseBody
+    public String about() {
+        return "1111111111111";
     }
 
 
