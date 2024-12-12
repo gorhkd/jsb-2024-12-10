@@ -4,7 +4,11 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.6'
 }
 
+<<<<<<< HEAD
 group = 'com.ll'
+=======
+group = 'com.my'
+>>>>>>> e714fe407f697952981102c5df1a15463b753e6e
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -30,7 +34,16 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+<<<<<<< HEAD
 	runtimeOnly 'com.h2database:h2'
+=======
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2'
+
+	testImplementation 'org.junit.jupiter:junit-jupiter'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+>>>>>>> e714fe407f697952981102c5df1a15463b753e6e
 }
 
 tasks.named('test') {
